@@ -1,0 +1,16 @@
+.style1, .number3 {
+  font-size: 24px;
+  background-color: pink;
+  font-family: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
+}
+
+#style2 {
+  color: blue;
+  font-size: 36px;
+}
+
+#style3 {
+  background-color: lightgreen;
+  font-size: 24px;
+  font-weight: bold;
+}
