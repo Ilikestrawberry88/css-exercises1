@@ -1,5 +1,12 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
@@ -10,6 +17,11 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.text {
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -23,4 +35,18 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/* cards section stuff */
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
