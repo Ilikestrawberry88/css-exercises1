@@ -1,12 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* links and list stuffs */
+ul, ol {
+  list-style-type: none;
+}
+
+li {
+  margin: 0px 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+/* content stuffs */
+.container-content {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+
 
 .header {
   height: 72px;
+  font-weight: 600px;
+  font-size: 20px;
+  font-family: "Kalnia", Helvetica, sans-serif;
   background: darkmagenta;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
   color: white;
 }
 
@@ -14,16 +51,35 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* side bar stuffs */
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex: 1 0 auto;
+  font-size: 25px;
+  display: flex;
+  gap: 20px;  
+  padding: 20px 0px 0px 20px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 250px;
+  padding: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
 }
